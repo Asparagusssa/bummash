@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Городской портал</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://case-battle.org/" onclick="close_window();"><img class="logo" src="img/logo.png" alt=""></a>
+        <p class="resh">Уже решили: 25594</p>
+        <div class="nav">
+            <ul>
+                <li><a href="#modalVhod">Войти</a></li>
+                <li><a class="reg" href="#modalReg">Регистрация</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>
+        Городской портал<br>“Сделаем лучше вместе”
+    </h1>
+    <main>
+        <section class="mama">
+            <h3>Новая скамейка на<br>Буммаше</h3>
+            <img class="first" src="img/1.png" alt="">
+            <p class="second">Улучшение инфраструктуры </p>
+            <p class="second">21.07.22</p>
+        </section>
+        <section class="mama">
+            <h3>Новый забор на<br>Буммаше</h3>
+            <img class="first" src="img/2.png" alt="">
+            <p class="second">Улучшение инфраструктуры </p>
+            <p class="second">12.03.22</p>
+        </section>
+        <section class="mama">
+            <h3>Покрасили площадку на<br>Буммаше</h3>
+            <img class="first" src="img/3.png" alt="">
+            <p class="second">Улучшение инфраструктуры </p>
+            <p class="second">21.07.22</p>
+        </section>
+        <section class="mama">
+            <h3>Убрали мусор на<br>Буммаше</h3>
+            <img class="first" src="img/4.png" alt="">
+            <p class="second">Улучшение инфраструктуры </p>
+            <p class="second">12.03.22</p>
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="zay">Заявки</a>
+    </footer>
+
+
+    <!-- REGISTER -->
+    <div class="modal">
+        <div id="modalReg" class="modal-overlay">
+            <a href="#" class="modal-area"></a>
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span class="modal-title">Регистрация</span>
+                    <a href="#" class="modal-close">&times;</a>
+                </div>
+                <form class="modal-body" name="form" id="regis">
+                    <section class="sec">
+                        <input type="text" placeholder="ФИО" name="fio" id="fio">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="sec">
+                        <input type="text" placeholder="Логин" id="name1">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="sec">
+                        <input type="text" placeholder="Email">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="sec">
+                        <input type="password" placeholder="Пароль" id="pass1">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="sec">
+                        <input type="password" placeholder="Повторите пароль">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="btn">
+                        <input type="submit" class="hh" value="Зарегистрироваться">
+                    </section>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- VHOD -->
+    <div class="modal">
+        <div id="modalVhod" class="modal-overlay">
+            <a href="#" class="modal-area"></a>
+            <div class="modal-window" >
+                <div class="modal-header">
+                    <span class="modal-title">Вход</span>
+                    <a href="#" class="modal-close">&times;</a>
+                </div>
+                <form class="modal-body" id="vhod">
+                    <section class="sec">
+                        <input type="text" id="name2" placeholder="Логин">
+                        <label for="">Ошибка</label>
+                    </section>
+                    <section class="sec">
+                        <input type="password" id="pass2" placeholder="Пароль">
+                        <label id="error"  for="">Неправильно введен пароль или логин</label>
+                    </section>
+                        <section class="btn">
+                            <input class="hh" type="submit" value="Войти">
+                        </section>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

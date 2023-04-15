@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Alef', sans-serif;
+    background-color: #272C2E;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    width: 92%;
+    height: 109px;
+    margin: 8px auto 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.nav {
+    margin-top: 15px;
+}
+
+
+.resh {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.reg {
+    padding: 12px;
+    background-color: #FAB400;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+input {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #FAB400;
+    background-color: #ffffff;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #000000;
+}
+
+label {
+    color: #272C2E;
+}
+
+label::selection {
+    background: transparent;
+}
+
+.in{
+    padding: 12px 32px 12px 32px;
+    background-color: #FAB400;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000000;
+}
+.hh{
+display: flex;
+justify-content: center;
+
+}
